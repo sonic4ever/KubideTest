@@ -9,15 +9,18 @@
 				class palabra{
 					public $tres = 'Foo';
 					public $cinco = 'Bar!';
+					public $quince = 'Miau';
 				}
 				$totalAlumnos=100;
 				$palabras = new palabra();
+				//Solución (B)
 				for ($numAlumnos=1;$numAlumnos<=$totalAlumnos;$numAlumnos++){
 					echo '<li>';
 					if ($numAlumnos%3==0){
-						echo $palabras->tres;
 						if ($numAlumnos%5==0){
-							echo $palabras->cinco;
+							echo $palabras->quince;
+						}else{
+							echo $palabras->tres;
 						}
 					}else{
 						if ($numAlumnos%5==0){
