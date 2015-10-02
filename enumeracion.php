@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Enumeración de la clase</title>
+		<title>Enumeracion de la clase</title>
 	</head>
 	<body>
 		<h1>Listado de la clase</h1>
@@ -12,20 +12,16 @@
 				}
 				$totalAlumnos=100;
 				$palabras = new palabra();
-				//Solución (A)
 				for ($numAlumnos=1;$numAlumnos<=$totalAlumnos;$numAlumnos++){
 					echo '<li>';
+					if (($numAlumnos%3!=0)&($numAlumnos%5!=0)){
+						echo $numAlumnos;
+					}
 					if ($numAlumnos%3==0){
 						echo $palabras->tres;
-						if ($numAlumnos%5==0){
-							echo $palabras->cinco;
-						}
-					}else{
-						if ($numAlumnos%5==0){
-							echo $palabras->cinco;
-						}else{
-							echo $numAlumnos;
-						}
+					}
+					if ($numAlumnos%5==0){
+						echo $palabras->cinco;
 					}
 					echo '</li>';
 				}
