@@ -7,7 +7,12 @@
 		<ol type="1">
 			<?php 
 				for ($numAlumnos=1;$numAlumnos<=100;$numAlumnos++){
-					echo '<li>'.$numAlumnos.'</li>';
+					if ($numAlumnos%3==0){
+						echo '<li>Foo</li>';
+					}
+					else{
+						echo '<li>'.$numAlumnos.'</li>';
+					}
 				}
 			?>
 		</ol>
