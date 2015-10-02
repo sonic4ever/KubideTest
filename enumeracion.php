@@ -12,15 +12,17 @@
 				}
 				$palabras = new palabra();
 				for ($numAlumnos=1;$numAlumnos<=100;$numAlumnos++){
+					echo '<li>';
 					if ($numAlumnos%3==0){
-						echo '<li>'.$palabras->tres.'</li>';
+						echo $palabras->tres;
 					}else{
 						if ($numAlumnos%5==0){
-							echo '<li>'.$palabras->cinco.'</li>';
+							echo $palabras->cinco;
 						}else{
-								echo '<li>'.$numAlumnos.'</li>';
+								echo $numAlumnos;
 						}
-					}					
+					}
+					echo '</li>';
 				}
 			?>
 		</ol>
