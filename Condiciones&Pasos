@@ -1,0 +1,27 @@
+#Listado de requerimientos del poyecto
+Must-> Solución óptima
+Must-> PHP Poo
+Should-> GitHub con commits
+Should-> Test de validación
+
+#Commits
+1.- Crear este listado
+2.- Listar números del 1 al 100
+3.- Cada alumno dice su número
+4.- Si el número del alumno es divisible por 3 dirá "Foo" en vez de su número
+5.- Si el número del alumno es divisible por 5 dirá "Bar!" en vez de su número
+
+#Problemas detectados
+1.- En caso de ser múltiplo de 3 y 5 (15, 30, 45, 60, 75 y 90) qué debe decir:
+  Solución A) Dirá "FooBar!" Cumple los requisitos del programa
+  Solución B) Dirá "Miau" Opción nueva para este caso, aunque no cumple los requisitos de múltiplo de 3 y 5
+  Solución C) Decir solo "Foo" o solo "Bar!" estária cumpliendo los requisitos parcialmente
+  
+#Commits para solucionar el problema 1
+1.- Crear una branch nueva para cada solución planteada
+2.- Desarrollar la branch para la solución A)
+3.- Desarrollar la branch para la solución B)
+4.- Desarrollar la branch para la solución C)
+
+#Commit extra
+Implementar un test de validación que compruebe los resultados
