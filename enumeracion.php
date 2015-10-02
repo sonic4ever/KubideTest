@@ -9,10 +9,13 @@
 				for ($numAlumnos=1;$numAlumnos<=100;$numAlumnos++){
 					if ($numAlumnos%3==0){
 						echo '<li>Foo</li>';
-					}
-					else{
-						echo '<li>'.$numAlumnos.'</li>';
-					}
+					}else{
+						if ($numAlumnos%5==0){
+							echo '<li>Bar!</li>';
+						}else{
+								echo '<li>'.$numAlumnos.'</li>';
+						}
+					}					
 				}
 			?>
 		</ol>
