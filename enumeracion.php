@@ -10,16 +10,20 @@
 					public $tres = 'Foo';
 					public $cinco = 'Bar!';
 				}
+				$totalAlumnos=100;
 				$palabras = new palabra();
-				for ($numAlumnos=1;$numAlumnos<=100;$numAlumnos++){
+				for ($numAlumnos=1;$numAlumnos<=$totalAlumnos;$numAlumnos++){
 					echo '<li>';
 					if ($numAlumnos%3==0){
 						echo $palabras->tres;
+						if ($numAlumnos%5==0){
+							echo $palabras->cinco;
+						}
 					}else{
 						if ($numAlumnos%5==0){
 							echo $palabras->cinco;
 						}else{
-								echo $numAlumnos;
+							echo $numAlumnos;
 						}
 					}
 					echo '</li>';
