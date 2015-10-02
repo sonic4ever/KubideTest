@@ -12,6 +12,7 @@
 				}
 				$totalAlumnos=100;
 				$palabras = new palabra();
+				//Solución (A)
 				for ($numAlumnos=1;$numAlumnos<=$totalAlumnos;$numAlumnos++){
 					echo '<li>';
 					if ($numAlumnos%3==0){
