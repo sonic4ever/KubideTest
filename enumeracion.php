@@ -13,15 +13,11 @@
 				}
 				$totalAlumnos=100;
 				$palabras = new palabra();
-				//Solución (B)
+				//Solución (C)
 				for ($numAlumnos=1;$numAlumnos<=$totalAlumnos;$numAlumnos++){
 					echo '<li>';
 					if ($numAlumnos%3==0){
-						if ($numAlumnos%5==0){
-							echo $palabras->quince;
-						}else{
 							echo $palabras->tres;
-						}
 					}else{
 						if ($numAlumnos%5==0){
 							echo $palabras->cinco;
